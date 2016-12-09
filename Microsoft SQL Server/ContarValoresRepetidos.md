@@ -13,3 +13,8 @@ FROM Tabla
 GROUP BY Columna_a_contar
 HAVING COUNT(Columna_a_contar)> 1
 ```
+/*PARA CONOCER LA CANTIDAD DE REGISTROS DUPLICADO Y EL VALOR QUE SE ESTÁ DUPLICANDO*/
+SELECT Columna_a_contar, COUNT(*) AS CANTIDAD
+FROM Tabla
+GROUP BY Columna_a_contar
+HAVING COUNT(Columna_a_contar)> 1
